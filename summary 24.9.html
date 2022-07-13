@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summary 24.9</title>
+</head>
+<body>
+    <h1 id="mouse-event">mouse events exploring</h1>
+    <textarea name="" id="text-field" cols="30" rows="10"></textarea>
+    <script>
+        document.getElementById('text-field').addEventListener('keyup',function(event){
+            console.log(event.target.value);
+        });
+
+        /* document.getElementById('mouse-event').addEventListener('mousemove',function(){
+            console.log('mouse entered');
+        }); */
+        /* document.getElementById('mouse-event').addEventListener('mouseenter',function(){
+            console.log('mouse entered');
+        }); */
+        document.getElementById('mouse-event').addEventListener('mouseout',function(){
+            console.log('mouse outed');
+        })
+    </script>
+</body>
+</html>
